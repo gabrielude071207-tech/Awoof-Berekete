@@ -5,55 +5,55 @@ All colors MUST be HSL.
 */
 
 :root {
-  /* Pure white background with crisp black text */
-  --background: 0 0% 100%;
-  --foreground: 0 0% 0%;
+  /* Warm cream background with dark charcoal text */
+  --background: 30 35% 96%;
+  --foreground: 228 20% 18%;
 
-  /* Clean white cards with black text */
+  /* White cards with dark text */
   --card: 0 0% 100%;
-  --card-foreground: 0 0% 0%;
+  --card-foreground: 228 20% 18%;
 
   /* Popovers with white background */
   --popover: 0 0% 100%;
-  --popover-foreground: 0 0% 0%;
+  --popover-foreground: 228 20% 18%;
 
-  /* Primary: Black with white text */
-  --primary: 0 0% 0%;
+  /* Primary: Warm Orange (#FF6B35) */
+  --primary: 16 100% 60%;
   --primary-foreground: 0 0% 100%;
 
-  /* Secondary: Light gray background with black text */
-  --secondary: 0 0% 97%;
-  --secondary-foreground: 0 0% 0%;
+  /* Secondary: Golden Yellow (#FFC857) */
+  --secondary: 43 100% 68%;
+  --secondary-foreground: 228 20% 18%;
 
-  /* Muted: Subtle gray with darker text */
-  --muted: 0 0% 96%;
-  --muted-foreground: 0 0% 40%;
+  /* Muted: Light cream */
+  --muted: 30 25% 92%;
+  --muted-foreground: 228 15% 45%;
 
-  /* Accent: Light gray */
-  --accent: 0 0% 96%;
-  --accent-foreground: 0 0% 0%;
+  /* Accent: Deep Red (#C1121F) */
+  --accent: 354 80% 44%;
+  --accent-foreground: 0 0% 100%;
 
-  /* Destructive: Clean red */
+  /* Destructive: Red */
   --destructive: 0 70% 50%;
   --destructive-foreground: 0 0% 100%;
 
-  /* Borders: Subtle gray */
-  --border: 0 0% 90%;
-  --input: 0 0% 90%;
-  --ring: 0 0% 0%;
+  /* Borders: Subtle warm gray */
+  --border: 30 15% 88%;
+  --input: 30 15% 88%;
+  --ring: 16 100% 60%;
 
-  /* Minimal rounded corners */
-  --radius: 0.375rem;
+  /* Rounded corners for warm, friendly feel */
+  --radius: 0.5rem;
 
-  /* Sidebar: Clean white with black text */
+  /* Sidebar */
   --sidebar-background: 0 0% 100%;
-  --sidebar-foreground: 0 0% 0%;
-  --sidebar-primary: 0 0% 0%;
+  --sidebar-foreground: 228 20% 18%;
+  --sidebar-primary: 16 100% 60%;
   --sidebar-primary-foreground: 0 0% 100%;
-  --sidebar-accent: 0 0% 96%;
-  --sidebar-accent-foreground: 0 0% 0%;
-  --sidebar-border: 0 0% 90%;
-  --sidebar-ring: 0 0% 0%;
+  --sidebar-accent: 30 25% 92%;
+  --sidebar-accent-foreground: 228 20% 18%;
+  --sidebar-border: 30 15% 88%;
+  --sidebar-ring: 16 100% 60%;
 }
 
 .dark {
@@ -177,11 +177,24 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* Minimal, clean typography */
+/* Typography - Restaurant styling */
+body {
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-montserrat), var(--font-inter), sans-serif;
   font-weight: 600;
   letter-spacing: -0.025em;
   color: hsl(var(--foreground));
+}
+
+.font-montserrat {
+  font-family: var(--font-montserrat), sans-serif;
+}
+
+.font-sans {
+  font-family: var(--font-inter), sans-serif;
 }
 
 /* Clean button styles */
