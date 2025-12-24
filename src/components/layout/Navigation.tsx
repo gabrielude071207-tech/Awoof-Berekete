@@ -27,18 +27,14 @@ export default function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-all duration-300">
+          <Link href="/" className="flex items-center hover:opacity-80 transition-all duration-300">
             <Image
               src="https://awoofberekete.com/wp-content/uploads/2018/11/cropped-logo-2.png"
               alt="Awoof Berekete Logo"
-              width={50}
-              height={50}
-              className="w-12 h-12"
+              width={120}
+              height={120}
+              className="w-28 h-28"
             />
-            <div className="flex flex-col">
-              <span className="font-playfair font-bold text-xl text-foreground tracking-wide">Awoof</span>
-              <span className="font-playfair font-bold text-xl text-foreground -mt-1 tracking-wide">Berekete</span>
-            </div>
           </Link>
 
           {/* Desktop Navigation */}
