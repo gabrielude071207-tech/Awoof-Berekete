@@ -14,7 +14,7 @@ export default function Footer() {
           <div>
             <Link href="/" className="flex items-center gap-3 mb-6 hover:opacity-80 transition-opacity">
               <Image
-                src="/images/mockups/projectlogo.png"
+                src="https://awoofberekete.com/wp-content/uploads/2018/11/cropped-logo-2.png"
                 alt="Awoof Berekete Logo"
                 width={40}
                 height={40}

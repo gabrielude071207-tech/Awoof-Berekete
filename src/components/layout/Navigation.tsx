@@ -29,7 +29,7 @@ export default function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-all duration-300">
             <Image
-              src="/images/mockups/projectlogo.png"
+              src="https://awoofberekete.com/wp-content/uploads/2018/11/cropped-logo-2.png"
               alt="Awoof Berekete Logo"
               width={50}
               height={50}
