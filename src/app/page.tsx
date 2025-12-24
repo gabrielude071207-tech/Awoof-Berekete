@@ -28,12 +28,12 @@ export default function HomePage() {
                 <div className="h-[1px] w-16 bg-primary mb-6" />
                 <p className="text-primary font-medium tracking-wider text-sm uppercase mb-4">Premium Nigerian Cuisine</p>
               </div>
-              <h1 className="font-playfair font-bold text-5xl md:text-6xl lg:text-7xl leading-[1.1] text-white">
+              <h1 className="font-playfair font-bold text-5xl md:text-6xl lg:text-7xl leading-[1.1]" style={{color: 'white'}}>
                 Authentic Flavors,
                 <br />
                 <span className="text-primary">Delivered Fresh</span>
               </h1>
-              <p className="text-lg md:text-xl text-white max-w-xl leading-relaxed">
+              <p className="text-lg md:text-xl max-w-xl leading-relaxed" style={{color: 'white'}}>
                 Experience the refined taste of Lagos with our signature rice packs, soups, and continental dishes. Crafted with care, ready in 30 minutes.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-6">
@@ -42,7 +42,7 @@ export default function HomePage() {
                     View Our Menu
                   </Link>
                 </Button>
-                <Button size="lg" variant="outline" asChild className="border-primary/30 text-white hover:bg-primary/10 hover:border-primary/50 backdrop-blur-sm">
+                <Button size="lg" variant="outline" asChild className="border-primary/30 hover:bg-primary/10 hover:border-primary/50 backdrop-blur-sm" style={{color: 'black'}}>
                   <a href="https://wa.me/2348034567890" target="_blank" rel="noopener noreferrer">
                     Order Now via WhatsApp
                   </a>
