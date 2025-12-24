@@ -33,7 +33,7 @@ export default function HomePage() {
                 <br />
                 <span className="text-primary">Delivered Fresh</span>
               </h1>
-              <p className="text-lg md:text-xl text-white/80 max-w-xl leading-relaxed">
+              <p className="text-lg md:text-xl text-white max-w-xl leading-relaxed">
                 Experience the refined taste of Lagos with our signature rice packs, soups, and continental dishes. Crafted with care, ready in 30 minutes.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-6">
