@@ -194,7 +194,7 @@ export default function HomePage() {
                 Browse Full Menu
               </Link>
             </Button>
-            <Button size="lg" variant="outline" asChild className="border-white text-white hover:bg-white/10">
+            <Button size="lg" variant="outline" asChild className="border-white hover:bg-white/10">
               <a href="tel:08034567890" style={{color: 'black'}}>
                 Call to Order: 0803-456-7890
               </a>
