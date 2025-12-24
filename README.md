@@ -1,42 +1,39 @@
-# Next.js Boilerplate Zylo
+# Awoof Berekete
 
-A production-ready Next.js 15 boilerplate with TypeScript, Tailwind CSS, Radix UI, and Zylo integration.
+A modern Nigerian restaurant website showcasing authentic Nigerian cuisine with online ordering capabilities.
+
+## About
+
+Awoof Berekete is a premium Nigerian restaurant offering authentic traditional dishes. This website provides customers with an easy way to browse our menu, learn about our services, and place orders via phone or WhatsApp.
 
 ## Features
 
-### Core Stack
-- **Next.js 15** - React framework with App Router  
+- **Full Menu System** - Browse 50+ dishes across 10 categories (Soups, Rice, Swallow, Proteins, Sides, Drinks, etc.)
+- **Featured Rice Packs** - Specialty rice dishes with professional food photography
+- **Online Ordering** - Direct integration with WhatsApp and phone ordering
+- **Responsive Design** - Mobile-first design with hamburger navigation
+- **Location & Contact** - Embedded Google Maps and contact form
+- **About & Services** - Restaurant story, chef information, and catering services
+
+## Tech Stack
+
+- **Next.js 15** - React framework with App Router
 - **TypeScript** - Type-safe code
 - **Tailwind CSS v4** - Utility-first CSS framework
-- **Radix UI** - Accessible component primitives
+- **shadcn/ui** - Accessible component library
+- **Lucide React** - Icon library
 - **Framer Motion** - Animation library
 
-### State Management & Data Fetching
-- **TanStack Query** - Server state management
-- **Zustand** - Client state management
-- **Axios** - HTTP client with interceptors
+## Pages
 
-### Form Handling & Validation
-- **React Hook Form** - Performant forms
-- **Zod** - Schema validation
-- **@hookform/resolvers** - Form validation integration
-
-### UI Components
-- **shadcn/ui** - Re-usable component library
-- **Lucide React** - Icon library
-- **Recharts** - Chart library
-- **Sonner** - Toast notifications
-
-### Development Tools
-- **ESLint** - Linting
-- **Prettier** - Code formatting
-- **TypeScript** - Static type checking
-
-### Zylo Integration
-- Built-in Zylo provider and hooks
-- Authentication flow
-- Protected routes
-- API integration
+1. **Home** - Hero section, featured meals, why choose us
+2. **About** - Restaurant story, chef profile, values
+3. **Services** - Catering, delivery, custom packages
+4. **Rice Packs** - Featured rice dishes with photography
+5. **Menu** - Complete menu with 10+ categories
+6. **How to Order** - Step-by-step ordering guide
+7. **Contact** - Contact form and location map
+8. **Legal** - Privacy policy and terms of service
 
 ## Getting Started
 
@@ -47,81 +44,68 @@ A production-ready Next.js 15 boilerplate with TypeScript, Tailwind CSS, Radix U
 ### Installation
 
 1. **Clone the repository:**
-\`\`\`bash
-git clone https://github.com/your-org/next.jsBoilerplateZylo.git
-cd next.jsBoilerplateZylo
-\`\`\`
+```bash
+git clone https://github.com/gabrielude071207-tech/Awoof-Berekete.git
+cd Awoof-Berekete
+```
 
 2. **Install dependencies:**
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
-3. **Set up environment variables:**
-\`\`\`bash
-cp .env.example .env.local
-\`\`\`
-Edit \`.env.local\` and add your values.
-
-4. **Run the development server:**
-\`\`\`bash
+3. **Run the development server:**
+```bash
 npm run dev
-\`\`\`
+```
 
-5. Open [http://localhost:3000](http://localhost:3000)
+4. Open [http://localhost:3000](http://localhost:3000)
 
 ## Project Structure
 
-\`\`\`
+```
 src/
-├── app/                    # Next.js app directory
-├── components/            # React components
-│   ├── ui/               # shadcn/ui components
-│   ├── error-boundary.tsx
-│   ├── loading-skeleton.tsx
-│   └── empty-state.tsx
-├── hooks/                 # Custom React hooks
-├── lib/                   # Core libraries
-├── utils/                 # Utility functions
-├── types/                 # TypeScript types
-├── constants/             # App constants
-└── stores/                # Zustand stores
-\`\`\`
+├── app/                      # Next.js app directory (pages)
+│   ├── page.tsx             # Home page
+│   ├── about/               # About page
+│   ├── services/            # Services page
+│   ├── rice-packs/          # Rice packs showcase
+│   ├── menu/                # Full menu
+│   ├── how-to-order/        # Ordering guide
+│   ├── contact/             # Contact page
+│   └── legal/               # Privacy & terms
+├── components/              # React components
+│   ├── ui/                 # shadcn/ui components
+│   ├── Navigation.tsx      # Header navigation
+│   ├── Footer.tsx          # Footer with links
+│   └── WhatsAppFloat.tsx   # Floating WhatsApp button
+└── lib/                    # Utilities and data
+    ├── menu-data.ts        # Menu items and categories
+    └── utils.ts            # Helper functions
+```
 
-## Custom Hooks
+## Menu Categories
 
-### useDebounce
-\`\`\`typescript
-const debouncedSearch = useDebounce(searchTerm, 300);
-\`\`\`
+- Soups (Egusi, Banga, Bitter Leaf, Okro, Ogbono, Efo Riro, Oha)
+- Rice Dishes (Jollof, Fried Rice, Coconut Rice, Ofada, Native, White Rice)
+- Swallow (Eba, Pounded Yam, Semovita, Fufu, Amala, Wheat)
+- Proteins (Goat Meat, Beef, Chicken, Fish, Snails, Cow Leg, Shaki)
+- Sides (Plantain, Moi Moi, Akara, Puff Puff, Peppered Snails)
+- Drinks (Chapman, Zobo, Palm Wine, Soft Drinks, Fresh Juice)
+- Appetizers & More
 
-### useLocalStorage
-\`\`\`typescript
-const [user, setUser, removeUser] = useLocalStorage('user', null);
-\`\`\`
+## Contact Integration
 
-### useMediaQuery
-\`\`\`typescript
-const isMobile = useIsMobile();
-\`\`\`
-
-## API Client
-
-\`\`\`typescript
-import { apiClient } from '@/utils';
-
-const { data } = await apiClient.get('/users');
-await apiClient.post('/users', { name: 'John' });
-\`\`\`
-
-## Components
-
-### Error Boundary, Loading Skeletons, Empty States
-All included and ready to use!
+- **Phone Orders:** +234 803 456 7890
+- **WhatsApp Orders:** Direct messaging integration
+- **Location:** Google Maps embedded for directions
 
 ## Deployment
 
-Deploy to Vercel with one click or use Docker.
+This project is optimized for deployment on:
+- **Vercel** (recommended for Next.js)
+- **Netlify**
+- **Any hosting platform supporting Next.js**
 
 ## License
 
@@ -129,4 +113,4 @@ MIT License
 
 ---
 
-Built with ❤️ using Next.js and TypeScript
+Built with Next.js 15 and TypeScript. Showcasing authentic Nigerian cuisine with modern web technology.
