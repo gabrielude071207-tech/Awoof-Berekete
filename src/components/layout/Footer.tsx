@@ -4,12 +4,15 @@ import { Facebook, Instagram, Mail, MapPin, Phone } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-muted border-t border-border">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+    <footer className="bg-gradient-to-b from-[#1a1510] to-[#0d0a08] border-t border-primary/20">
+      {/* Gold accent line */}
+      <div className="h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent" />
+
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand Column */}
           <div>
-            <Link href="/" className="flex items-center gap-3 mb-4">
+            <Link href="/" className="flex items-center gap-3 mb-6 hover:opacity-80 transition-opacity">
               <Image
                 src="/images/mockups/projectlogo.png"
                 alt="Awoof Berekete Logo"
@@ -18,19 +21,19 @@ export default function Footer() {
                 className="w-10 h-10"
               />
               <div className="flex flex-col">
-                <span className="font-montserrat font-bold text-lg text-foreground">Awoof</span>
-                <span className="font-montserrat font-bold text-lg text-foreground -mt-1">Berekete</span>
+                <span className="font-playfair font-bold text-lg text-primary tracking-wide">Awoof</span>
+                <span className="font-playfair font-bold text-lg text-primary -mt-1 tracking-wide">Berekete</span>
               </div>
             </Link>
-            <p className="text-sm text-muted-foreground mb-4">
-              Fresh, delicious, and nutritious Nigerian meals at affordable prices. Your taste, our passion.
+            <p className="text-sm text-white/70 mb-6 leading-relaxed">
+              Fresh, delicious, and nutritious Nigerian meals at premium quality. Your taste, our passion.
             </p>
             <div className="flex gap-3">
               <a
                 href="https://instagram.com/awoofberekete"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full bg-primary/10 hover:bg-primary text-primary hover:text-white flex items-center justify-center transition-colors"
+                className="w-10 h-10 rounded-full border border-primary/30 hover:border-primary hover:bg-primary/10 text-primary flex items-center justify-center transition-all duration-300"
                 aria-label="Instagram"
               >
                 <Instagram className="w-4 h-4" />
@@ -39,7 +42,7 @@ export default function Footer() {
                 href="https://facebook.com/awoofberekete"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full bg-primary/10 hover:bg-primary text-primary hover:text-white flex items-center justify-center transition-colors"
+                className="w-10 h-10 rounded-full border border-primary/30 hover:border-primary hover:bg-primary/10 text-primary flex items-center justify-center transition-all duration-300"
                 aria-label="Facebook"
               >
                 <Facebook className="w-4 h-4" />
@@ -48,7 +51,7 @@ export default function Footer() {
                 href="https://wa.me/2348034567890"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full bg-primary/10 hover:bg-primary text-primary hover:text-white flex items-center justify-center transition-colors"
+                className="w-10 h-10 rounded-full border border-primary/30 hover:border-primary hover:bg-primary/10 text-primary flex items-center justify-center transition-all duration-300"
                 aria-label="WhatsApp"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -60,30 +63,30 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-montserrat font-semibold text-foreground mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+            <h3 className="font-playfair font-semibold text-white mb-6 text-lg">Quick Links</h3>
+            <ul className="space-y-3">
               <li>
-                <Link href="/" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link href="/" className="text-sm text-white/70 hover:text-primary transition-colors">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link href="/about" className="text-sm text-white/70 hover:text-primary transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link href="/services" className="text-sm text-white/70 hover:text-primary transition-colors">
                   Our Services
                 </Link>
               </li>
               <li>
-                <Link href="/menu" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link href="/menu" className="text-sm text-white/70 hover:text-primary transition-colors">
                   Full Menu
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link href="/contact" className="text-sm text-white/70 hover:text-primary transition-colors">
                   Contact Us
                 </Link>
               </li>
@@ -92,30 +95,30 @@ export default function Footer() {
 
           {/* Menu Categories */}
           <div>
-            <h3 className="font-montserrat font-semibold text-foreground mb-4">Popular Items</h3>
-            <ul className="space-y-2">
+            <h3 className="font-playfair font-semibold text-white mb-6 text-lg">Popular Items</h3>
+            <ul className="space-y-3">
               <li>
-                <Link href="/rice-packs" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link href="/rice-packs" className="text-sm text-white/70 hover:text-primary transition-colors">
                   Rice Packs
                 </Link>
               </li>
               <li>
-                <Link href="/menu#soups" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link href="/menu#soups" className="text-sm text-white/70 hover:text-primary transition-colors">
                   Soups & Sauces
                 </Link>
               </li>
               <li>
-                <Link href="/menu#african" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link href="/menu#african" className="text-sm text-white/70 hover:text-primary transition-colors">
                   African Meals
                 </Link>
               </li>
               <li>
-                <Link href="/menu#continental" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link href="/menu#continental" className="text-sm text-white/70 hover:text-primary transition-colors">
                   Continental Dishes
                 </Link>
               </li>
               <li>
-                <Link href="/menu#breakfast" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link href="/menu#breakfast" className="text-sm text-white/70 hover:text-primary transition-colors">
                   Breakfast Meals
                 </Link>
               </li>
@@ -124,23 +127,23 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-montserrat font-semibold text-foreground mb-4">Contact Us</h3>
-            <ul className="space-y-3">
-              <li className="flex items-start gap-2">
+            <h3 className="font-playfair font-semibold text-white mb-6 text-lg">Contact Us</h3>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-muted-foreground">
+                <span className="text-sm text-white/70 leading-relaxed">
                   181 Akowonjo Road, Lagos, Nigeria
                 </span>
               </li>
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-primary flex-shrink-0" />
-                <a href="tel:08034567890" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a href="tel:08034567890" className="text-sm text-white/70 hover:text-primary transition-colors">
                   0803-456-7890
                 </a>
               </li>
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-primary flex-shrink-0" />
-                <a href="mailto:info@awoofberekete.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a href="mailto:info@awoofberekete.com" className="text-sm text-white/70 hover:text-primary transition-colors">
                   info@awoofberekete.com
                 </a>
               </li>
@@ -149,16 +152,16 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-border">
+        <div className="pt-10 mt-10 border-t border-primary/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-muted-foreground text-center md:text-left">
+            <p className="text-sm text-white/60 text-center md:text-left">
               © {new Date().getFullYear()} Awoof Berekete. All rights reserved.
             </p>
             <div className="flex gap-6">
-              <Link href="/privacy" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              <Link href="/privacy" className="text-sm text-white/60 hover:text-primary transition-colors">
                 Privacy Policy
               </Link>
-              <Link href="/terms" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              <Link href="/terms" className="text-sm text-white/60 hover:text-primary transition-colors">
                 Terms of Service
               </Link>
             </div>

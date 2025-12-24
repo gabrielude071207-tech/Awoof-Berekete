@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Montserrat } from "next/font/google";
+import { Inter, Montserrat, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { QueryProvider } from "@/components/query-provider";
@@ -20,6 +20,13 @@ const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
   display: "swap",
+});
+
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -45,7 +52,7 @@ export default function RootLayout({
 
       </head>
       <body
-        className={`${inter.variable} ${montserrat.variable} font-sans antialiased`}
+        className={`${inter.variable} ${montserrat.variable} ${playfair.variable} font-sans antialiased`}
       >
         <QueryProvider>
           <ThemeProvider

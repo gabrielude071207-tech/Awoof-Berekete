@@ -8,33 +8,41 @@ export default function HomePage() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary/90 via-primary to-accent overflow-hidden">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-10">
+      <section className="relative bg-gradient-to-br from-[#1a1510] via-[#2d2419] to-[#3d2e1f] overflow-hidden">
+        {/* Luxury Background Pattern */}
+        <div className="absolute inset-0 opacity-[0.03]">
           <div className="absolute inset-0" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 0 L61 39 L100 39 L68 61 L79 100 L50 78 L21 100 L32 61 L0 39 L39 39 Z' fill='%23D4AF37' fill-opacity='1'/%3E%3C/svg%3E")`,
+            backgroundSize: '80px 80px',
           }} />
         </div>
 
-        <div className="container mx-auto px-4 py-20 lg:py-28 relative">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+        {/* Gold accent overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-primary/5 via-transparent to-transparent" />
+
+        <div className="container mx-auto px-4 py-24 lg:py-32 relative">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Hero Text */}
-            <div className="text-white space-y-6">
-              <h1 className="font-montserrat font-bold text-4xl md:text-5xl lg:text-6xl leading-tight">
-                Authentic Nigerian Flavors,
+            <div className="text-white space-y-8">
+              <div className="inline-block">
+                <div className="h-[1px] w-16 bg-primary mb-6" />
+                <p className="text-primary font-medium tracking-wider text-sm uppercase mb-4">Premium Nigerian Cuisine</p>
+              </div>
+              <h1 className="font-playfair font-bold text-5xl md:text-6xl lg:text-7xl leading-[1.1] text-white">
+                Authentic Flavors,
                 <br />
-                Delivered Fresh to Your Door
+                <span className="text-primary">Delivered Fresh</span>
               </h1>
-              <p className="text-lg md:text-xl text-white/90 max-w-xl">
-                Experience the taste of Lagos with our signature rice packs, soups, and continental dishes. Ready in 30 minutes!
+              <p className="text-lg md:text-xl text-white/80 max-w-xl leading-relaxed">
+                Experience the refined taste of Lagos with our signature rice packs, soups, and continental dishes. Crafted with care, ready in 30 minutes.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Button size="lg" variant="secondary" asChild className="bg-white hover:bg-white/90 text-primary font-semibold">
+              <div className="flex flex-col sm:flex-row gap-4 pt-6">
+                <Button size="lg" variant="default" asChild className="bg-primary hover:bg-primary/90 text-foreground font-semibold shadow-lg hover:shadow-xl border border-primary/20">
                   <Link href="/menu">
                     View Our Menu
                   </Link>
                 </Button>
-                <Button size="lg" variant="outline" asChild className="border-white text-white hover:bg-white/10">
+                <Button size="lg" variant="outline" asChild className="border-primary/30 text-white hover:bg-primary/10 hover:border-primary/50 backdrop-blur-sm">
                   <a href="https://wa.me/2348034567890" target="_blank" rel="noopener noreferrer">
                     Order Now via WhatsApp
                   </a>
@@ -43,7 +51,8 @@ export default function HomePage() {
             </div>
 
             {/* Hero Image */}
-            <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative h-[450px] lg:h-[550px] rounded-lg overflow-hidden shadow-2xl border border-primary/20">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent z-10" />
               <Image
                 src="/images/generated/hero-nigerian-plate.png"
                 alt="Delicious Nigerian plate with jollof rice, chicken, and plantains"

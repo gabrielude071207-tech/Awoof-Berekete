@@ -20,11 +20,14 @@ export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-white shadow-sm border-b border-border">
+    <nav className="sticky top-0 z-50 bg-card/95 backdrop-blur-md shadow-md border-b border-primary/10">
+      {/* Gold accent line */}
+      <div className="h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent" />
+
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 hover:opacity-90 transition-opacity">
+          <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-all duration-300">
             <Image
               src="/images/mockups/projectlogo.png"
               alt="Awoof Berekete Logo"
@@ -33,8 +36,8 @@ export default function Navigation() {
               className="w-12 h-12"
             />
             <div className="flex flex-col">
-              <span className="font-montserrat font-bold text-xl text-foreground">Awoof</span>
-              <span className="font-montserrat font-bold text-xl text-foreground -mt-1">Berekete</span>
+              <span className="font-playfair font-bold text-xl text-foreground tracking-wide">Awoof</span>
+              <span className="font-playfair font-bold text-xl text-foreground -mt-1 tracking-wide">Berekete</span>
             </div>
           </Link>
 
@@ -44,7 +47,7 @@ export default function Navigation() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+                className="text-sm font-medium text-foreground hover:text-primary transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-primary hover:after:w-full after:transition-all after:duration-300"
               >
                 {link.label}
               </Link>
@@ -53,13 +56,13 @@ export default function Navigation() {
 
           {/* Desktop CTAs */}
           <div className="hidden lg:flex items-center gap-3">
-            <Button variant="outline" size="sm" asChild>
+            <Button variant="outline" size="sm" asChild className="border-primary/20 hover:border-primary/40 hover:bg-primary/5">
               <a href="tel:08034567890" className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
                 Call Us: 0803-456-7890
               </a>
             </Button>
-            <Button size="sm" asChild className="bg-primary hover:bg-primary/90">
+            <Button size="sm" asChild className="bg-primary hover:bg-primary/90 text-foreground font-medium shadow-md">
               <a href="https://wa.me/2348034567890" target="_blank" rel="noopener noreferrer">
                 Order on WhatsApp
               </a>
@@ -78,7 +81,7 @@ export default function Navigation() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden py-4 border-t border-border">
+          <div className="lg:hidden py-4 border-t border-primary/10">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <Link
@@ -90,14 +93,14 @@ export default function Navigation() {
                   {link.label}
                 </Link>
               ))}
-              <div className="flex flex-col gap-2 pt-4 border-t border-border">
-                <Button variant="outline" size="sm" asChild>
+              <div className="flex flex-col gap-2 pt-4 border-t border-primary/10">
+                <Button variant="outline" size="sm" asChild className="border-primary/20">
                   <a href="tel:08034567890" className="flex items-center justify-center gap-2">
                     <Phone className="w-4 h-4" />
                     Call Us: 0803-456-7890
                   </a>
                 </Button>
-                <Button size="sm" asChild className="bg-primary hover:bg-primary/90">
+                <Button size="sm" asChild className="bg-primary hover:bg-primary/90 text-foreground font-medium">
                   <a href="https://wa.me/2348034567890" target="_blank" rel="noopener noreferrer">
                     Order on WhatsApp
                   </a>
