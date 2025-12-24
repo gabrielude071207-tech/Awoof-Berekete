@@ -195,7 +195,7 @@ export default function HomePage() {
               </Link>
             </Button>
             <Button size="lg" variant="outline" asChild className="border-white text-white hover:bg-white/10">
-              <a href="tel:08034567890">
+              <a href="tel:08034567890" style={{color: 'black'}}>
                 Call to Order: 0803-456-7890
               </a>
             </Button>
