@@ -182,7 +182,7 @@ export default function RicePacksPage() {
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-3xl">🔥</span>
                 </div>
-                <h3 className="font-montserrat font-semibold text-lg text-foreground mb-2">
+                <h3 className="font-montserrat font-semibold text-lg text-white mb-2">
                   Authentic Flavors
                 </h3>
                 <p className="text-muted-foreground text-sm">
