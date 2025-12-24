@@ -31,9 +31,9 @@ export default function Navigation() {
             <Image
               src="https://awoofberekete.com/wp-content/uploads/2018/11/cropped-logo-2.png"
               alt="Awoof Berekete Logo"
-              width={240}
+              width={192}
               height={64}
-              className="w-60 h-16"
+              className="w-48 h-16"
             />
           </Link>
 
