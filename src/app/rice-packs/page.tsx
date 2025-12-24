@@ -221,7 +221,7 @@ export default function RicePacksPage() {
                 Call: 0803-456-7890
               </a>
             </Button>
-            <Button size="lg" variant="outline" asChild className="border-white text-white hover:bg-white/10">
+            <Button size="lg" variant="outline" asChild className="border-white hover:bg-white/10" style={{color: 'black'}}>
               <a href="https://wa.me/2348034567890" target="_blank" rel="noopener noreferrer">
                 Order on WhatsApp
               </a>
